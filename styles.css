@@ -44,7 +44,7 @@ h2 {
     z-index: 2;
     position: sticky;
     display: flex;
-    top: 0;
+    top: 10px;
     background-color: #E4CCE8;
     border: 5px solid #CDB4DB;
     border-radius: 10px;
@@ -137,7 +137,9 @@ h2 {
 }
 
 body {
-    background-color: white;
+    background-image: url("/images/par.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 #about-me {
@@ -168,6 +170,10 @@ body {
     border: 5px solid #FFAFCC;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #FFAFCC;
+}
+
+#about-me-3 {
+    display: none;
 }
 
 #about-me-header {
@@ -348,4 +354,56 @@ body {
     color: #A2D2FF;
     margin: 30px 30px 0;
     align-content: end;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: #BDE0FE;
+    padding: 10px;
+    border: 5px solid #A2D2FF;
+    border-radius: 10px;
+    margin: 0;
+    margin-top: -12px;
+    box-shadow: 1px 1px 5px #A2D2FF;
+}
+
+#contact-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 90vw;
+    margin: 20px 20px;
+}
+
+@media (max-width: 768px) {
+    #about-me-1 {
+        display: none;
+    }
+
+    #about-me-2 {
+        display: none;
+    }
+
+    #about-me-3 {
+        display: inline-block;
+        width: 90vw;
+        margin-top: -12px;
+        padding: 25px 30px;
+        background-color: #FFC8DD;
+        border: 5px solid #FFAFCC;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #FFAFCC;
+        font-family: "Dream Orphanage";
+        color: white;
+        font-size: 18px;
+    }
+
+    #about-me-header-2 {
+        display: none;
+    }
 }
