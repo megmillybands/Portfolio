@@ -137,9 +137,11 @@ h2 {
 }
 
 body {
-    background-image: url("/images/par.png");
-    background-repeat: no-repeat;
+    background-image: url("images/par.png");
+    background-repeat: repeat-y;
     background-attachment: scroll;
+    background-position: center;
+    background-size: contain;
 }
 
 #about-me {
@@ -148,54 +150,31 @@ body {
     gap: 1vw;
 }
 
-#about-me-1, #about-me-2 {
-    flex: content
-}
-
 #about-me-1 {
-    width: 40vw;
+    display: inline-block;
+    margin: 30px 15vw;
     margin-top: -12px;
     padding: 25px 30px;
     background-color: #FFC8DD;
     border: 5px solid #FFAFCC;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #FFAFCC;
-}
-
-#about-me-2 {
-    width: 30vw;
-    margin-top: -12px;
-    padding: 25px 30px;
-    background-color: #FFC8DD;
-    border: 5px solid #FFAFCC;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #FFAFCC;
-}
-
-#about-me-3 {
-    display: none;
+    font-family: "Dream Orphanage";
+    color: white;
+    font-size: 18px;
 }
 
 #about-me-header {
     scroll-margin-top: 75px;
     display: flex;
-}
-
-#about-me-header-1, #about-me-header-2 {
-    flex: 1
+    justify-content: center;
 }
 
 #about-me-header-1 {
     color: #FFAFCC;
     margin: 0 30px;
-    align-content: end;
-}
-
-#about-me-header-2 {
-    color: #FFAFCC;
-    margin: 0 30px;
-    text-align: right;
-    max-width: 30vw;
+    width: 60vw;
+    text-align: left;
 }
 
 .about-me-text {
@@ -208,9 +187,15 @@ body {
 
 #skills-header {
     scroll-margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+#skills-header-1 {
     color: #A2D2FF;
-    margin: 30px 30px 0;
-    align-content: end;
+    margin: 0;
+    width: 60vw;
+    text-align: left;
 }
 
 #skills {
@@ -222,7 +207,7 @@ body {
     padding: 10px;
     border: 5px solid #A2D2FF;
     border-radius: 10px;
-    margin: 0;
+    margin: 30px 15vw;
     margin-top: -12px;
     box-shadow: 1px 1px 5px #A2D2FF;
 }
@@ -233,8 +218,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    max-width: 90vw;
+    width: 60vw;
     margin: 20px 20px;
+    
 }
 
 .skills-whole {
@@ -247,14 +233,18 @@ body {
     background-color: white;
     border: 5px solid #A2D2FF;
     border-radius: 10px;
-    height: 250px;
-    width: 250px;
+    height: 50vw;
+    width: 50vw;
+    max-height: 250px;
+    max-width: 250px;
     box-shadow: 1px 1px 5px #A2D2FF;
 }
 
 .logos {
-    height: 250px;
-    width: 250px;
+    height: 50vw;
+    width: 50vw;
+    max-height: 250px;
+    max-width: 250px;
 }
 
 .text {
@@ -265,8 +255,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 250px;
-    width: 250px;
+    height: 50vw;
+    width: 50vw;
+    max-height: 250px;
+    max-width: 250px;
     padding: 10px;
     margin: 0px;
     border-radius: 4px;
@@ -286,11 +278,17 @@ body {
     border-radius: 5px;
 }
 
-#projects-header {
+#project-header {
     scroll-margin-top: 75px;
-    margin: 30px 30px 0;
-    align-content: end;
+    display: flex;
+    justify-content: center;
+}
+
+#project-header-1 {
     color: #FFAFCC;
+    margin: 0;
+    width: 60vw;
+    text-align: left;
 }
 
 #projects {
@@ -301,7 +299,7 @@ body {
     padding: 10px;
     border: 5px solid #FFAFCC;
     border-radius: 10px;
-    margin: 0;
+    margin: 30px 15vw;
     margin-top: -12px;
     box-shadow: 1px 1px 5px #FFAFCC;
 }
@@ -313,7 +311,6 @@ body {
 
 .project-div a {
     display: inline-block;
-    width: fit-content;
     font-family: "Rosaline";
     font-size: 40px;
     color: #FFAFCC;
@@ -345,15 +342,21 @@ body {
     border: 5px solid #FFAFCC;
     border-radius: 10px;
     margin: 20px;
-    width: 60vw;
+    /* width: 60vw; */
     box-shadow: 1px 1px 5px #FFAFCC;
 }
 
 #contact-header {
     scroll-margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-header-1 {
     color: #A2D2FF;
-    margin: 30px 30px 0;
-    align-content: end;
+    margin: 0;
+    width: 60vw;
+    text-align: left;
 }
 
 #contact {
@@ -365,7 +368,7 @@ body {
     padding: 10px;
     border: 5px solid #A2D2FF;
     border-radius: 10px;
-    margin: 0;
+    margin: 30px 15vw;
     margin-top: -12px;
     box-shadow: 1px 1px 5px #A2D2FF;
 }
@@ -374,36 +377,41 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
     max-width: 90vw;
+    height: fit-content;
     margin: 20px 20px;
+    justify-content: center;
 }
 
+.logos-2 {
+    padding: 10px;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #BDE0FE
+}
+
+.logos-2:hover {
+    background-color: #E4CCE8;
+    border: 2px solid #CDB4DB;
+    border-radius: 5px;
+}
+
+/* #contact-block p {
+    text-align: center;
+} */
+
 @media (max-width: 768px) {
-    #about-me-1 {
-        display: none;
-    }
-
-    #about-me-2 {
-        display: none;
-    }
-
-    #about-me-3 {
-        display: inline-block;
+    #about-me-header-1, #skills-header-1, #project-header-1, #contact-header-1 {
         width: 90vw;
-        margin-top: -12px;
-        padding: 25px 30px;
-        background-color: #FFC8DD;
-        border: 5px solid #FFAFCC;
-        border-radius: 10px;
-        box-shadow: 2px 2px 5px #FFAFCC;
-        font-family: "Dream Orphanage";
-        color: white;
-        font-size: 18px;
+        margin: 0 30px
     }
 
-    #about-me-header-2 {
-        display: none;
+    #about-me-1, #skills, #projects, #contact {
+        margin: 0 0 20px;
+        margin-top: -12px;
+    }
+
+    .text {
+        font-size: 13px;
     }
 }
