@@ -22,8 +22,9 @@ html {
 
 .hello-text {
     margin: auto;
-    color: white;
+    color: #D4A373;
     font-weight: 300;
+    text-shadow: 2px -2px 1px #FEFAE0;
 }
 
 h1 {
@@ -39,7 +40,6 @@ h2 {
 #header-text {
     text-align: center;
     margin: 50px;
-    color: #CDB4DB;
 }
 
 #header {
@@ -47,10 +47,9 @@ h2 {
     position: sticky;
     display: flex;
     top: 10px;
-    background-color: #E4CCE8;
-    border: 5px solid #CDB4DB;
+    background-color: #DDB58F;
+    border: 5px solid #D4A373;
     border-radius: 10px;
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, .5);
 }
 
 #menu {
@@ -60,32 +59,32 @@ h2 {
 
 #menu-button {
     font-size: 30px;
-    color: white;
-    background-color: #E4CCE8;
+    color: #FEFAE0;
+    background-color: #DDB58F;
     font-family: "Melon Fruit";
-    border: 5px double #CDB4DB;
+    border: 5px double #D4A373;
     border-radius: 5px;
     margin: 5px;
 }
 
 #menu-button:hover {
-    background-color: #BDE0FE;
+    background-color: #FEFAE0;
+    color: #D4A373;
 }
 
 #menu-content {
     display: none;
     position: absolute;
     background-color: transparent;
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, .5);
-    border: 2px solid #CDB4DB;
+    border: 2px solid #D4A373;
     border-radius: 8px;
 }
 
 #menu-content a {
     font-family: "Melon Fruit";
     font-size: 25px;
-    background-color: #E4CCE8;
-    color: white;
+    background-color: #DDB58F;
+    color: #FEFAE0;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -93,23 +92,24 @@ h2 {
 }
 
 #menu-content-1 {
-    border: 2px solid #CDB4DB;
+    border: 2px solid #D4A373;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
 #menu-content-2, #menu-content-3 {
-    border: 2px solid #CDB4DB;
+    border: 2px solid #D4A373;
 }
 
 #menu-content-4 {
-    border: 2px solid #CDB4DB;
+    border: 2px solid #D4A373;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 #menu-content a:hover {
-    background-color: #BDE0FE;
+    background-color: #FEFAE0;
+    color: #D4A373;
 }
 
 #menu:hover #menu-content {
@@ -121,8 +121,7 @@ h2 {
     font-size: 35px;
     text-align: right;
     margin: auto 10px;
-    color: white;
-    text-shadow: 0px 0px 5px #CDB4DB;
+    color: #FEFAE0;
 }
 
 #headshot {
@@ -133,9 +132,8 @@ h2 {
 #megan-picture {
     width: 75vw;
     max-width: 500px;
-    border: 5px solid #CDB4DB;
+    border: 5px solid #D4A373;
     border-radius: 500px;
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, .5);
 }
 
 body {
@@ -144,7 +142,7 @@ body {
     background-attachment: scroll;
     background-position: center;
     background-size: contain; */
-    background: linear-gradient(to bottom right, #BDE0FE, #E4CCE8, #FFC8DD);
+    background: linear-gradient(to bottom right, #E9EDC9, #D2DAB3, #ADB68B);
 }
 
 #about-me {
@@ -158,12 +156,11 @@ body {
     margin: 30px 15vw;
     margin-top: -12px;
     padding: 25px 30px;
-    background-color: #FFC8DD;
-    border: 5px solid #FFAFCC;
+    background-color: #DDB58F;
+    border: 5px solid #D4A373;
     border-radius: 10px;
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, .5);
     font-family: "Dream Orphanage";
-    color: white;
+    color: #FEFAE0;
     font-size: 18px;
 }
 
@@ -175,19 +172,11 @@ body {
 
 #about-me-header-1 {
     z-index: 1;
-    color: #FFAFCC;
-    text-shadow: 0 -3px 7px white;
+    color: #D4A373;
     margin: 0 30px;
     width: 60vw;
     text-align: left;
-}
-
-.about-me-text {
-    font-family: "Dream Orphanage";
-    font-size: 25px;
-    color: white;
-    margin: 0;
-    padding: 10px;
+    text-shadow: 2px -2px 1px #FEFAE0;
 }
 
 #skills-header {
@@ -197,11 +186,11 @@ body {
 }
 
 #skills-header-1 {
-    color: #A2D2FF;
-    text-shadow: 0 -3px 7px white;
+    color: #D4A373;
     margin: 0;
     width: 60vw;
     text-align: left;
+    text-shadow: 2px -2px 1px #FEFAE0;
 }
 
 #skills {
@@ -209,13 +198,12 @@ body {
     justify-content: center;
     align-items: center;
     height: fit-content;
-    background-color: #BDE0FE;
+    background-color: #DDB58F;
     padding: 10px;
-    border: 5px solid #A2D2FF;
+    border: 5px solid #D4A373;
     border-radius: 10px;
     margin: 30px 15vw;
     margin-top: -12px;
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, .5);
 }
 
 #skills-block {
@@ -236,14 +224,13 @@ body {
     flex-wrap: wrap;
     margin: 10px;
     padding: 10px;
-    background-color: white;
-    border: 5px solid #A2D2FF;
+    background-color: #FEFAE0;
+    border: 5px solid #D4A373;
     border-radius: 10px;
     height: 50vw;
     width: 50vw;
     max-height: 250px;
     max-width: 250px;
-    box-shadow: 1px 1px 5px #A2D2FF;
 }
 
 .logos {
@@ -268,8 +255,8 @@ body {
     padding: 10px;
     margin: 0px;
     border-radius: 4px;
-    color: white;
-    background-color: #BDE0FE;
+    color: #D4A373;
+    background-color: #FEFAE0;
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s, visibility .2s;
@@ -291,24 +278,23 @@ body {
 }
 
 #project-header-1 {
-    color: #FFAFCC;
-    text-shadow: 0 -3px 7px white;
+    color: #D4A373;
     margin: 0;
     width: 60vw;
     text-align: left;
+    text-shadow: 2px -2px 1px #FEFAE0;
 }
 
 #projects {
     display: flex;
     height: fit-content;
     justify-content: center;
-    background-color: #FFC8DD;
+    background-color: #DDB58F;
     padding: 10px;
-    border: 5px solid #FFAFCC;
+    border: 5px solid #D4A373;
     border-radius: 10px;
     margin: 30px 15vw;
     margin-top: -12px;
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, .5);
 }
 
 #projects-block {
@@ -320,12 +306,12 @@ body {
     display: inline-block;
     font-family: "Rosaline";
     font-size: 40px;
-    color: #FFAFCC;
+    color: #D4A373;
     margin: 10px;
 }
 
 .project-div a:hover {
-    color: #CDB4DB;
+    color: #D2DAB3;
     text-decoration: underline;
     text-decoration-style: wavy;
 }
@@ -333,24 +319,22 @@ body {
 .languages {
     font-family: "Melon Fruit";
     font-size: 25px;
-    color: #FFAFCC;
+    color: #D4A373;
     margin: 10px
 }
 
 .project-description {
     font-family: "Dream Orphanage";
     font-size: 20px;
-    color: #FFAFCC;
+    color: #D4A373;
     margin: 10px
 }
 
 .project-div {
-    background-color: white;
-    border: 5px solid #FFAFCC;
+    background-color: #FEFAE0;
+    border: 5px solid #FAEDCD;
     border-radius: 10px;
     margin: 20px;
-    /* width: 60vw; */
-    box-shadow: 1px 1px 5px #FFAFCC;
 }
 
 #contact-header {
@@ -360,11 +344,11 @@ body {
 }
 
 #contact-header-1 {
-    color: #A2D2FF;
-    text-shadow: 0 -3px 7px white;
+    color: #D4A373;
     margin: 0;
     width: 60vw;
     text-align: left;
+    text-shadow: 2px -2px 1px #FEFAE0;
 }
 
 #contact {
@@ -372,13 +356,12 @@ body {
     justify-content: center;
     align-items: center;
     height: fit-content;
-    background-color: #BDE0FE;
+    background-color: #DDB58F;
     padding: 10px;
-    border: 5px solid #A2D2FF;
+    border: 5px solid #D4A373;
     border-radius: 10px;
     margin: 30px 15vw;
     margin-top: -12px;
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, .5);
 }
 
 #contact-block {
@@ -395,18 +378,14 @@ body {
     padding: 10px;
     width: 64px;
     height: 64px;
-    border: 2px solid #BDE0FE
+    border: 2px solid #DDB58F
 }
 
 .logos-2:hover {
-    background-color: #E4CCE8;
-    border: 2px solid #CDB4DB;
+    border: 2px solid #D4A373;
     border-radius: 5px;
 }
 
-/* #contact-block p {
-    text-align: center;
-} */
 
 @media (max-width: 768px) {
     #about-me-header-1, #skills-header-1, #project-header-1, #contact-header-1 {
