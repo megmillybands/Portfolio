@@ -7,18 +7,17 @@
     <title>Megan's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
     <div id="header">
         <div id="menu">
             <button id="menu-button">menu</button>
             <div id="menu-content">
-                <a id="menu-content-1" href="#about-me-header">about me</a>
-                <a id="menu-content-2" href="#skills-header">skills</a>
-                <a id="menu-content-3" href="#project-header">projects</a>
+                <a id="menu-content-1" href="projects.html">projects</a>
+                <a id="menu-content-3" href="#skills-header">skills</a>
                 <a id="menu-content-4" href="#contact-header">contact</a>
             </div>
         </div>
-        <h1 id="sticky-text">portfolio</h1>
+        <a id="sticky-text" href="home.html">megan's portfolio</a>
     </div>
 
     <div id="header-text">
@@ -28,22 +27,22 @@
         <h1 class="hello-text">Software Developer</h1>
     </div>
 
-    <div id="headshot">
-        <img id="megan-picture" src="images/megan_2_cropped.jpg">
-    </div>
+    <section id="landing-section">
 
-    <div id="main-content">
-        <div id="about-me-header">
-            <h1 id="about-me-header-1">About Me</h1>
+        <div id="headshot">
+            <img id="megan-picture" src="images/megan_2_cropped.jpg">
         </div>
 
         <section id="about-me">
             <div id="about-me-1">
-                <p id="about-me-text-1">I come from a family with a passion for the creative arts, so it's no surprise that I ended up much the same way. I have a very creative mind. I've always enjoyed painting, crocheting, sewing, embroidery... Pretty much any creative activity you can think of, I have tried it at least once. The process of gathering miscellaneous materials and turning it into something somewhat decent looking is a very rewarding experience. For me, writing a program or designing a webpage scratches that same itch in my creative brain.</p>
+                <p id="about-me-text-1">I come from a family with a passion for the creative arts, so it's no surprise that I ended up much the same way. I've always enjoyed painting, crocheting, sewing, embroidery, etc. For me, writing a program or designing a webpage scratches that same itch in my creative brain.</p>
                 <p id="about-me-text-2">My love for programming didn't develop overnight. My father was a programmer, and his father was also a programmer. Naturally, my father passed the torch to me. So I picked up one of his old HTML textbooks, and the rest is history.</p>
             </div>
         </section>
+    </section>
 
+
+    <div id="main-content">
         <div id="skills-header">
             <h1 id="skills-header-1">Skills</h1>
         </div>
@@ -85,42 +84,6 @@
             </div>
         </section>
 
-        <div id="project-header">
-            <h1 id="project-header-1">Projects</h1>
-        </div>
-
-        <section id="projects">
-            <div id="projects-block">
-                <div class="project-div">
-                    <a id="project-1-link" href="https://github.com/megmillybands/WHEEL-OF-FORTUNE" target="_blank">WHEEL OF FORTUNE</a>
-                    <p class="languages">Python</p>
-                    <p class="project-description">This is a side project I worked on along with my python coursework. It simulates an episode of Wheel of Fortune, and is designed for 3 players.</p>
-                </div>
-                <div class="project-div">
-                    <a id="project-2-link" href="https://megmillybands.github.io/GOAT/" target="_blank">GOAT</a>
-                    <p class="languages">HTML/CSS</p>
-                    <p class="project-description">This is a very basic showcase of my understanding of HTML/CSS fundamentals. It is a tribute to who I think is the greatest of all time (GOAT).</p>
-                </div>
-                <div class="project-div">
-                    <a id="project-3-link" href="https://github.com/Zac-Wa1ters/Idno-Care" target="_blank">Idno Care</a>
-                    <p class="languages">Python</p>
-                    <p class="project-description">This is a group project I worked on with two of my classmates. It is essentially a tamagotchi, or a pet simulator. You are assigned an Idno and are tasked with keeping it alive by feeding, cleaning, and playing with it.</p>
-                </div>
-                <div class="project-div">
-                    <a id="project-4-link" href="https://github.com/megmillybands/Weather-App-master" target="_blank">Weather App</a>
-                    <p class="languages">JavaScript, HTML/CSS</p>
-                    <p class="project-description">This is a group project I worked on with three of my classmates. It is a functional weather app. You can enter the name of a city, and it will show you relevant weather information. You can save cities to a favorites list for easy access.</p>
-                </div>
-                <div class="project-div">
-                    <a id="project-5-link" href="https://github.com/megmillybands/catadoptionagency" target="_blank">Cat Adoption Agency</a>
-                    <p class="languages">Python, Django, HTML/CSS</p>
-                    <p class="project-description">This is a solo project that simulates a cat adoption agency's website. You can sign up, log in, list cats for adoption, and send emails to inquire about certain listings. You can also edit account and listing information.</p>
-                </div>
-
-            </div>
-        </section>
-    </div>
-
     <div id="contact-header">
         <h1 id="contact-header-1">Contact Me</h1>
     </div>
@@ -141,5 +104,9 @@
             </a>
         </div>
     </section>
+
+    <a id="back-to-top" href="#top">
+        ^
+    </a>    
 </body>
 </html>
