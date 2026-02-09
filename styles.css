@@ -22,7 +22,6 @@ html {
 
 body {
     background-color: #fff5fa;
-    /* background: linear-gradient(to bottom right, #E9EDC9, #D2DAB3, #ADB68B); */
 }
 
 .hello-text {
@@ -55,6 +54,7 @@ h2 {
     background-color: #f7bdda;
     border: 5px solid #d28fb1;
     border-radius: 10px;
+    align-items: center;
 }
 
 #menu {
@@ -158,8 +158,6 @@ h2 {
 
 #about-me-1 {
     padding-left: 25px;
-    /* border: 5px solid #d28fb1;
-    border-radius: 10px; */
     font-family: "Dream Orphanage";
     color: #d28fb1;
     font-size: 18px;
@@ -249,6 +247,10 @@ h2 {
     transition: opacity .2s, visibility .2s;
 }
 
+.mobile-text {
+    display: none;
+}
+
 .skills-whole:hover .text {
     visibility: visible;
     opacity: 1;
@@ -333,7 +335,6 @@ h2 {
     margin: 10px
 }
 
-
 #contact-header {
     scroll-margin-top: 75px;
     display: flex;
@@ -343,7 +344,6 @@ h2 {
 #contact-header-1 {
     color: #d28fb1;
     margin: 0;
-    /* width: 60vw; */
     text-align: left;
     text-shadow: 2px -2px 1px #f7bdda;
 }
@@ -351,11 +351,9 @@ h2 {
 #contact {
     display: flex;
     justify-content: center;
-    justify-self: center;
     align-items: center;
-    height: fit-content;
+    justify-self: center;
     background-color: #f7bdda;
-    padding: 10px;
     border: 5px solid #d28fb1;
     border-radius: 10px;
     margin: 30px;
@@ -364,13 +362,15 @@ h2 {
 }
 
 #contact-block {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: fit-content;
-    height: fit-content;
-    margin: 20px 20px;
+    align-items: center;
     justify-content: center;
+    justify-self: center;
+    max-width: fit-content;
+    margin: 20px;
+}
+
+#contact-block a {
+    text-decoration: none;
 }
 
 .logos-2 {
@@ -392,10 +392,10 @@ h2 {
     justify-self: right;
     justify-content: center;
     text-align: center;
-    margin-right: 15px;
-    bottom: 15px;
-    width: 25px;
-    height: 25px;
+    margin-right: 10px;
+    bottom: 10px;
+    width: 20px;
+    height: 20px;
     border: 5px solid #d28fb1;
     border-radius: 500px;
     font-family: rosaline;
@@ -409,17 +409,123 @@ h2 {
 
 
 @media (max-width: 768px) {
-    #about-me-header-1, #skills-header-1, #project-header-1, #contact-header-1 {
-        width: 90vw;
-        margin: 0 30px
+
+    #header-text {
+        margin: 10px;
     }
 
-    #about-me-1, #skills, #projects, #contact {
-        margin: 0 0 20px;
-        margin-top: -12px;
+    #landing-section {
+        margin: 0;
+    }
+
+    #header {
+        padding: 5px;
+    }
+
+    #about-me {
+        width: 85vw;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #about-me-1 {
+        padding: 0;
+    }
+
+    #about-me-text-1, #about-me-text-2 {
+        margin: 10px;
+    }
+
+    #megan-picture {
+        width: 50vw;
+        max-width: none;
+    }
+
+    #skills {
+        margin-bottom: 15px;
+    }
+
+    #skills-block {
+        margin: 0;
+    }
+
+    .skills-whole {
+        height: 20vw;
+        width: 20vw;
     }
 
     .text {
-        font-size: 13px;
+        display: none;
     }
+
+    .mobile-text {
+        display: inline-block;
+        font-family: "Dream Orphanage";
+        font-size: 18px;
+        text-align: center;
+        align-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20vw;
+        width: 20vw;
+        padding: 10px;
+        margin: 0px;
+        border-radius: 4px;
+        color: #d28fb1;
+        background-color: #fff5fa;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .skills-whole:hover .mobile-text {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .logos {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    .project-div {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .project-div a {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .languages {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .project-description {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    #contact {
+        padding: 0;
+    }
+
+    #contact-block {
+        width: 75vw;
+        max-width: none;
+        text-align: center;
+        align-items: center;
+        margin: 5px 0 0;
+    }
+
+    .logos-2 {
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+
 }
