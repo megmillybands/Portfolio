@@ -22,6 +22,7 @@ html {
 
 body {
     background-color: #fff5fa;
+    margin: 0;
 }
 
 .hello-text {
@@ -50,85 +51,42 @@ h2 {
     z-index: 2;
     position: sticky;
     display: flex;
-    top: 10px;
+    top: 0px;
     background-color: #f7bdda;
-    border: 5px solid #d28fb1;
-    border-radius: 10px;
     align-items: center;
+    justify-self: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 5px 5px #d28fb1;
 }
 
-#menu {
-    flex: 0;
-    width: 100px;
+#nav-group {
+    display: flex;
+    gap: 2px;
+    background-color: #d28fb1;
+    margin: 0;
 }
 
-#menu-button {
+.nav-item {
+    display: inline-block;
     font-size: 30px;
+    font-family: rosaline;
+    text-decoration: none;
     color: #fff5fa;
     background-color: #f7bdda;
-    font-family: "Melon Fruit";
-    border: 5px double #d28fb1;
-    border-radius: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 0;
 }
 
-#menu-button:hover {
-    background-color: #fff5fa;
-    color: #d28fb1;
+.nav-item:hover {
+    background-color: #d28fb1;
 }
 
-#menu-content {
-    display: none;
-    position: absolute;
-    background-color: transparent;
-    border: 2px solid #d28fb1;
-    border-radius: 8px;
-}
-
-#menu-content a {
-    font-family: "Melon Fruit";
-    font-size: 25px;
-    background-color: #f7bdda;
-    color: #fff5fa;
+#nav-home {
+    font-size: 30px;
+    font-family: rosaline;
     text-decoration: none;
-    display: block;
-    text-align: left;
-    padding: 5px 5px 0;
-}
-
-#menu-content-1 {
-    border: 2px solid #d28fb1;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-#menu-content-2, #menu-content-3 {
-    border: 2px solid #d28fb1;
-}
-
-#menu-content-4 {
-    border: 2px solid #d28fb1;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-#menu-content a:hover {
-    background-color: #fff5fa;
-    color: #d28fb1;
-}
-
-#menu:hover #menu-content {
-    display: block;
-}
-
-#sticky-text {
-    font-family: Rosaline;
-    font-weight: bold;
-    text-decoration: none;
-    flex: 1;
-    font-size: 35px;
-    text-align: right;
-    margin: auto 10px;
     color: #fff5fa;
 }
 
